@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>宮崎駿迷來挑戰！</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<style type="text/css">
+		.alert{ text-align: center;font-size:30px; }
+		*{ text-align: center; }
+		body{ background-color: #f5f5dc }
+		button { font-family: 標楷體;margin: 0 0 20px 0;}
+		#quiz{ float:left;width:42%; }
+		.col-12 img { margin: 25px; }
+		img{ margin: 35px; }
+		img:hover{ transform:scale(1.25,1.25); }
+		.my-4 { clear: both; }
+		footer { clear: both; }
+	</style>
+	<script type="text/javascript" src="Answer13.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="alert alert-primary" role="alert">
+  			宮崎駿迷來挑戰！
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/01.png" height="220"><br>
+				<h2>Q01、神隱少女中，因偷了印章受到守護咒語而感到痛苦的白龍，小千給他吃了河神贈與的一半丸子來解除咒語。剩下的另外一半丸子最後給予誰吃下??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn01_1()" id="btn01-1">
+					小千的父母
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn01_2()" id="btn01-2">
+					無臉男
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn01_1()" id="btn01-3">
+					湯婆婆
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/02.jpg" height="220"><br>
+				<h2>Q02、龍貓中，小梅最先發現哪隻熊貓??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn02_1()" id="btn02-1">
+					龍貓(トトロ)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn02_1()" id="btn02-2">
+					中龍貓(中トト)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn02_2()" id="btn02-3">
+					小龍貓(チビトト)
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/03.jpg" height="220"><br>
+				<h2>Q03、霍爾的移動城堡中，霍爾的城堡門口有個顏色轉盤，能通往各個地點，其中綠色通往??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn03_1()" id="btn03-1">
+					國王城鎮
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn03_1()" id="btn03-2">
+					港口小鎮
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn03_2()" id="btn03-3">
+					城堡本體所在的地點
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/04.jpg" height="220"><br>
+				<h2>Q04、波妞(ポニョ)是哪種生物??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn04_2()" id="btn04-1">
+					金魚
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn04_1()" id="btn04-2">
+					人魚
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn04_1()" id="btn04-3">
+					人類
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/05.jpg" height="220"><br>
+				<h2>Q05、天空之城中，希達和巴魯一同念出了毀滅咒語破壞天空之城，其咒語為??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn05_2()" id="btn05-1">
+					巴魯斯(バルス)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn05_1()" id="btn05-2">
+					Release(レリーズ)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn05_1()" id="btn05-3">
+					里特‧拉多巴里達‧烏魯蘇．亞里亞洛斯‧巴魯．奈多利路<br>(リテ・ラトバリタ・ウルス・アリアロス・バル・ネトリール)
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/06.jpg" height="220"><br>
+				<h2>Q06、魔女宅急便中，琪琪(キキ)所飼養的黑貓吉吉(ジジ)年齡為幾歲??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn06_1()" id="btn06-1">
+					3歲
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn06_1()" id="btn06-2">
+					8歲
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn06_2()" id="btn06-3">
+					13歲
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/07.jpg" height="220"><br>
+				<h2>Q07、魔法公主中，小桑(サン) 如何餵食因傷無法進食的阿席達卡(アシタカ)??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn07_1()" id="btn07-1">
+					用手餵食
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn07_1()" id="btn07-2">
+					用腳餵食
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn07_2()" id="btn07-3">
+					用嘴餵食
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/08.jpg" height="220"><br>
+				<h2>Q08、紅豬中，紅豬發現天空上有條長雲，其構成原因為??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn08_1()" id="btn08-1">
+					巨大型轟炸機經過產生的凝結尾跡
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn08_1()" id="btn08-2">
+					流星墜落地面之前劃過天空的橫跡
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn08_2()" id="btn08-3">
+					眾多飛機靈魂聚集在天空形成景象
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/09.jpg" height="220"><br>
+				<h2>Q09、風起中，主角堀越二郎在真實故事中的名字??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn09_2()" id="btn09-1">
+					堀越二郎
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn09_1()" id="btn09-2">
+					奧宮正武
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn09_1()" id="btn09-3">
+					千田夏光
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/10.jpg" height="220"><br>
+				<h2>Q10、風之谷的古老傳說：「藍衣人將降臨在金色的草原，並引導人們所帶來希望。」劇中金色的草原指的是金色的陽光照在什麼東西上??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn10_1()" id="btn10-1">
+					麥田
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn10_1()" id="btn10-2">
+					芒草
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn10_2()" id="btn10-3">
+					蟲鬚
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/11.jpeg" height="220"><br>
+				<h2>Q11、神隱少女中，無臉男(カオナシ)吃下誰獲得說話的能力??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn11_2()" id="btn11-1">
+					青蛙(あおがえる)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn11_1()" id="btn11-2">
+					番台蛙(ばんだいかえる)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn11_1()" id="btn11-3">
+					小玲(リン)
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/12.jpg" height="220"><br>
+				<h2>Q12、龍貓中，小梅探望母親時迷路的原因是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn12_2()" id="btn12-1">
+					為了摘玉米
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn12_1()" id="btn12-2">
+					為了找到掉的鞋子
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn12_1()" id="btn12-3">
+					為了去找龍貓
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/13.jpg" height="220"><br>
+				<h2>Q13、霍爾的移動城堡中，誰幫忙蘇菲在荒地找到了霍爾的移動城堡??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn13_1()" id="btn13-1">
+					卡西法(カルシファー)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn13_2()" id="btn13-2">
+					稻草人蕪菁(カブ)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn13_1()" id="btn13-3">
+					霍爾(ハウル)
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/14.jpg" height="220"><br>
+				<h2>Q14、崖上的波妞中，波妞在何種情況下變成半人魚??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn14_2()" id="btn14-1">
+					舔了宗介的血液
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn14_1()" id="btn14-2">
+					碰到父親的生命之水
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn14_1()" id="btn14-3">
+					與宗介親吻
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/15.jpg" height="220"><br>
+				<h2>Q15、天空之城中，空中海賊「朵拉一家」的親生兒子有幾個??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn15_2()" id="btn15-1">
+					3個
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn15_1()" id="btn15-2">
+					5個
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn15_1()" id="btn15-3">
+					8個
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/16.jpg" height="220"><br>
+				<h2>Q16、魔女宅急便中，琪琪失去魔法的原因為何??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn16_1()" id="btn16-1">
+					離家時間過久
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn16_1()" id="btn16-2">
+					使用魔法過久
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn16_2()" id="btn16-3">
+					生活壓力過大
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/17.jpg" height="220"><br>
+				<h2>Q17、魔法公主中，阿席達卡(アシタカ)為了不讓小桑(サン)與黑帽大人(エボシ御前)互相攻擊，被何人用刀劃傷了臉部??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn17_2()" id="btn17-1">
+					小桑(サン)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn17_1()" id="btn17-2">
+					黑帽大人(エボシ御前)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn17_1()" id="btn17-3">
+					權三(ゴンザ)
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/18.png" height="220"><br>
+				<h2>Q18、紅豬中，紅豬的本名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn18_1()" id="btn18-1">
+					波魯克．羅素(ポルコ・ロッソ，Porco Rosso)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn18_2()" id="btn18-2">
+					馬克．帕哥特(マルコ・パゴット，Marco Pagot)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn18_1()" id="btn18-3">
+					保可洛(ピッコロ，Piccolo)
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/19.jpg" height="220"><br>
+				<h2>Q19、風起中，女主角第一次在火車上接到了男主角被風吹掉的帽子；多年後男主角在草原上接到女主角被風吹走的??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn19_1()" id="btn19-1">
+					寫生繪畫
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn19_2()" id="btn19-2">
+					遮陽傘
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn19_1()" id="btn19-3">
+					手帕
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/20.png" height="220"><br>
+				<h2>Q20、風之谷中，腐海劇毒的瘴氣，其毒素來源為何處??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn20_1()" id="btn20-1">
+					菌類的孢子
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn20_2()" id="btn20-2">
+					汙染的土壤
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn20_1()" id="btn20-3">
+					昆蟲的毒液
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/21.jpg" height="220"><br>
+				<h2>Q21、神隱少女中，白龍(ハク)的本名，日本使用漢字為何??(非中文翻譯)</h2>
+				<button type="button" class="btn btn-primary" onclick="btn21_2()" id="btn21-1">
+					饒速水小白主
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn21_1()" id="btn21-2">
+					賑早見琥珀主
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn21_1()" id="btn21-3">
+					賑早見小白主
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/22.jpg" height="220"><br>
+				<h2>Q22、神龍貓中，龍貓被命名為(トトロ)的由來??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn22_1()" id="btn22-1">
+					小梅(草壁メイ)覺得其愛吃橡實(ドングリ)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn22_2()" id="btn22-2">
+					小梅(草壁メイ)聽到其發出的聲音
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn22_1()" id="btn22-3">
+					小梅(草壁メイ)摸到其肚子的靈感
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/23.jpg" height="220"><br>
+				<h2>Q23、霍爾的移動城堡中，卡西法(カルシファー)哪種狀態下會變成粉紅色的??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn23_1()" id="btn23-1">
+					憤怒
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn23_2()" id="btn23-2">
+					害羞
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn23_1()" id="btn23-3">
+					瀕死
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/24.jpg" height="220"><br>
+				<h2>Q24、崖上的波妞中，向日葵之家的老奶奶們誰講到波妞是「人面魚」而被噴水??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn24_1()" id="btn24-1">
+					芳江(ヨシエ)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn24_1()" id="btn24-2">
+					季子(のり子)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn24_2()" id="btn24-3">
+					辰(トキ)
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/25.jpg" height="220"><br>
+				<h2>Q25、天空之城中，天空之城拉普達能一直漂浮於空中的能量來源為何??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn25_1()" id="btn25-1">
+					機器
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn25_2()" id="btn25-2">
+					飛行石
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn25_1()" id="btn25-3">
+					咒語
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/26.jpeg" height="220"><br>
+				<h2>Q26、魔女宅急便中，蜻蜓(トンボ)從哪種飛行器上發生意外，讓琪琪恢復魔力拯救了他??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn26_1()" id="btn26-1">
+					熱氣球
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn26_2()" id="btn26-2">
+					飛船
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn26_1()" id="btn26-3">
+					自製飛行器
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/27.jpg" height="220"><br>
+				<h2>Q27、魔法公主故事發生時間設定在日本哪個時代??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn27_1()" id="btn27-1">
+					鎌倉時代
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn27_2()" id="btn27-2">
+					室町時代
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn27_1()" id="btn27-3">
+					江戶時代
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/28.png" height="220"><br>
+				<h2>Q28、紅豬中，紅豬如何擊敗卡地士(カーチス)??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn28_2()" id="btn28-1">
+					用拳頭
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn28_1()" id="btn28-2">
+					用機槍掃射其飛機機尾
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn28_1()" id="btn28-3">
+					用自架飛機撞擊
+				</button>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img src="picture/29.jpg" height="220"><br>
+				<h2>Q29、風起中，誰講到：「飛機是個美麗卻受詛咒的夢想。」??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn29_1()" id="btn29-1">
+					堀越二郎(ほりこし　じろう)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn29_1()" id="btn29-2">
+					卡斯托普(カストルプ)
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn29_2()" id="btn29-3">
+					卡普羅尼(カプローニ)
+				</button>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="picture/30.jpg" height="220"><br>
+				<h2>Q30、風之谷的古老傳說：「藍衣人將降臨在金色的草原，並引導人們所帶來希望。」劇中娜烏西卡的衣服染上了王蟲的血而變成青色，請問染色之前衣服顏色是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn30_2()" id="btn30-1">
+					紅色
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn30_1()" id="btn30-2">
+					黃色
+				</button>
+				<button type="button" class="btn btn-primary" onclick="btn30_1()" id="btn30-3">
+					綠色
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<footer class="my-5 pt-5 text-muted text-center text-small">
+    	<p class="mb-1">恭喜你完成了挑戰，希望你可以全對</p>
+    	<ul class="list-inline">
+      		<li class="list-inline-item"><a href="../../Game.html">回首頁</a></li>
+    	</ul>
+  	</footer>
+</body>
+</html>
