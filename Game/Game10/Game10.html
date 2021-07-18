@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>邏輯推理大考驗！一起來腦力激盪一下吧！玩到懷疑人生？</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style type="text/css">
+		.alert{ text-align: center;font-size:30px; }
+		*{ text-align: center; }
+		body{ background-color: #f5f5dc }
+		button { font-family: 標楷體;margin: 10px;}
+		#quiz{ float:left;width:42%; }
+		img { margin: 25px; }
+		img:hover{ transform:scale(1.25,1.25); }
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="Answer10.js"></script>
+	<div class="container-fluid">
+		<div class="alert alert-danger" role="alert">
+  			邏輯推理大考驗！一起來腦力激盪一下吧！玩到懷疑人生？
+		</div>
+		<h2>Q01、冠廷參加100公尺比賽，在終點線前追過第二名，請問冠廷現在第幾名??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn01()" id="btn01">按此輸入答案</button>
+		<div id="Yes01">
+		</div>
+		<hr class="my-4">
+		<img src="picture/02.png" height="320"><br><br>
+		<h2>Q02、請問"?"內的數字為多少??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn02()" id="btn02">按此輸入答案</button>
+		<div id="Yes02">
+		</div>
+		<hr class="my-4">
+		<h2>Q03、志豪在畫畫的時候突然停電了，所以點燃10根蠟燭，過沒多久有4根被風吹滅，再過一陣子又有3根被風吹滅，之後就再也沒有蠟燭被風吹滅，請問最後剩下幾根蠟燭??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn03()" id="btn03">按此輸入答案</button>
+		<div id="Yes03">
+		</div>
+		<hr class="my-4">
+		<img src="picture/04.png" height="320"><br><br>
+		<h2>Q04、請問"?"內的數字為多少??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn04()" id="btn04">按此輸入答案</button>
+		<div id="Yes04">
+		</div>
+		<hr class="my-4">
+		<h2>Q05、刷牙之於牙刷，如同__之於__??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn05_1()" id="btn05-1">蜜蜂、蜂巢</button><br>
+		<button type="button" class="btn btn-danger" onclick="btn05_2()" id="btn05-2">吹奏、喇叭</button><br>
+		<button type="button" class="btn btn-danger" onclick="btn05_1()" id="btn05-3">鋸子、切割</button><br>
+		<button type="button" class="btn btn-danger" onclick="btn05_1()" id="btn05-4">針、線</button><br>
+		<hr class="my-4">
+		<h2>Q06、怡君買了一枝鉛筆+一個橡皮擦，總共1.1元。<br>鉛筆比橡皮擦多1元。<br><br>請問橡皮擦是幾元??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn06()" id="btn06">按此輸入答案</button>
+		<div id="Yes06">
+		</div>
+		<hr class="my-4">
+		<h2>Q07、我是一個男人，假設你的兒子是我兒子的爸爸，那麼我是你的誰??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn07_1()" id="btn07-1">你的父親</button><br>
+		<button type="button" class="btn btn-danger" onclick="btn07_1()" id="btn07-2">你自己本人</button><br>
+		<button type="button" class="btn btn-danger" onclick="btn07_2()" id="btn07-3">你的兒子</button><br>
+		<button type="button" class="btn btn-danger" onclick="btn07_1()" id="btn07-4">你的祖父</button><br>
+		<hr class="my-4">
+		<img src="picture/08.png" height="320"><br><br>
+		<h2>Q08、請問"?"內的數字為多少??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn08()" id="btn08">按此輸入答案</button>
+		<div id="Yes08">
+		</div>
+		<hr class="my-4">
+		<h2>Q09、農夫有17隻羊，除了9隻以外全病死了。<br><br>請問農夫還剩幾隻羊??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn09()" id="btn09">按此輸入答案</button>
+		<div id="Yes09">
+		</div>
+		<hr class="my-4">
+		<h2>金盒、銀盒、鉛盒中只有一盒有錢幣<br><br>盒子上分別寫著：<br>金盒：錢幣在這盒子裡。<br>銀盒：錢幣不在這盒中。<br>鉛盒：錢幣不再金盒中。<br></h2>
+		<h2>Q10、已知以上三句中只有一句話是真的，請問錢幣在哪個盒子中??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn10()" id="btn10">按此輸入答案</button>
+		<div id="Yes10">
+		</div>
+		<hr class="my-4">
+		<h2>Q11、一個人花了8塊錢買了一隻雞，9塊錢賣掉了，然後他覺得不划算，花10塊錢又買回來，11塊賣給了另一個人<br><br>請問他賺了多少??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn11()" id="btn11">按此輸入答案</button>
+		<div id="Yes11">
+		</div>
+		<hr class="my-4">
+		<img src="picture/12.png" height="320"><br><br>
+		<h2>Q12、請問"?"內的數字為多少??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn12()" id="btn12">按此輸入答案</button>
+		<div id="Yes12">
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<footer class="my-5 pt-5 text-muted text-center text-small">
+    	<p class="mb-1">恭喜你完成了挑戰，希望你可以全對</p>
+    	<ul class="list-inline">
+      		<li class="list-inline-item"><a href="../../Game.html">回首頁</a></li>
+    	</ul>
+  	</footer>
+</body>
+</html>
