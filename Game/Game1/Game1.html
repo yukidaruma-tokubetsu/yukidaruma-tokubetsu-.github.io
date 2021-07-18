@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>猜歌大賽</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style type="text/css">
+		.alert{ text-align: center;font-size:30px; }
+		*{ text-align: center; }
+		body{ background-color: #f5f5dc }
+		button { font-family: 標楷體;margin: 0 0 10px 0;}
+		#quiz{ float:left;width:42%; }
+		img{ margin: 40px; }
+		img:hover{ transform:scale(1.25,1.25); }
+		footer { clear: both; }
+		h1 { font-size: 60px; }
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="Answer1.js"></script>
+	<div class="container-fluid">
+		<div class="alert alert-primary" role="alert">
+  			猜歌大賽
+		</div>
+		<div id="quiz">
+			<audio controls>
+				<source src="music/01.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q1、請問這首八年級生K歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn1()" id="btn1">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes1">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/LhWTLeFK-sU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/02.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q2、請問這首八年級生K歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn2()" id="btn2">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes2">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/YaJWn-Spxfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/03.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q3、請問這首八年級生K歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn3()" id="btn3">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes3">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/btjDxlXGBVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/04.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q4、請問這首八年級生K歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn4()" id="btn4">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes4">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/LeWRqBsm0zY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/05.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q5、請問這首歌是迪士尼哪部的音樂??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn5()" id="btn5">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes5">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/LJ_Ypk8Dx3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/06.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q6、請問這首歌是迪士尼哪部的音樂??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn6()" id="btn6">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes6">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FdZgzuYzBEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/07.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q7、請問這首歌是迪士尼哪部的音樂??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn7()" id="btn7">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes7">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Yhqfd3DbzJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/08.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q8、請問這首歌是迪士尼哪部的音樂??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn8()" id="btn8">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes8">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/axySrE0Kg6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/09.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q9、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn9()" id="btn9">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes9">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/EXaLvBGqQww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/10.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q10、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn10()" id="btn10">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes10">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/lSO6nOKU4-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/11.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q11、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn11()" id="btn11">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes11">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/LE6vRCpcbb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/12.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q12、請問這首歌是哪部電影的主題曲??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn12()" id="btn12">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes12">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/CHvcG3FpYXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/13.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q13、請問這首歌是哪部電影的主題曲??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn13()" id="btn13">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes13">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/odfQ_q5C1c8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/14.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q14、請問這首歌是哪部電影的主題曲??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn14()" id="btn14">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes14">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/2xRky-P9RcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/15.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q15、請問這首歌是哪部電影的主題曲??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn15()" id="btn15">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes15">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/rtOvBOTyX00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/16.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q16、請問這首偶像劇的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn16()" id="btn16">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes16">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZRrhoFBM4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/17.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q17、請問這首偶像劇的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn17()" id="btn17">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes17">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/slQWn-25xqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/18.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q18、請問這首偶像劇的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn18()" id="btn18">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes18">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/xuTaKiUFVb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/19.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q19、請問這首偶像劇的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn19()" id="btn19">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes19">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/aBbNkOIl59Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/20.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q20、請問這首團體成軍10年以上的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn20()" id="btn20">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes20">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/88D2-J_pk7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/21.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q21、請問這首團體成軍10年以上的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn21()" id="btn21">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes21">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/nIe3FLKNwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/22.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q22、請問這首團體成軍10年以上的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn22()" id="btn22">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes22">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/QDiSck_imgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/23.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q23、請問這首團體成軍10年以上的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn23()" id="btn23">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes23">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/U7mPqycQ0tQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/24.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q24、請問這首團體成軍10年以上的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn24()" id="btn24">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes24">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/x6QA3m58DQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/25.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q25、請問這首團體成軍10年以上的歌的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn25()" id="btn25">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes25">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/in8NNzwFa-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/26.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q26、請問這首歌是哪部動漫的歌??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn26()" id="btn26">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes26">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/XKkSEGDjOlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/27.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q27、請問這首歌是哪部動漫的歌??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn27()" id="btn27">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes27">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/nYh3BQEoYJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/28.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q28、請問這首歌是哪部動漫的歌??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn28()" id="btn28">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes28">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/r310yf9tHDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/29.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q29、請問這首歌是哪部動漫的歌??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn29()" id="btn29">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes29">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/RMFVuCURZIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/30.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q30、請問這首歌是哪部動漫的歌??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn30()" id="btn30">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes30">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/b4Ll-y64g_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/31.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q31、請問這首歌是哪部動漫的歌??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn31()" id="btn31">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes31">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/CGbcLHoYlw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/32.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q32、請問這首星光幫唱紅的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn32()" id="btn32">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes32">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ZeghG09iaNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/33.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q33、請問這首星光幫唱紅的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn33()" id="btn33">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes33">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/dy70lVVxhh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/34.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q34、請問這首星光幫唱紅的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn34()" id="btn34">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes34">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Dw-R85AcN_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/35.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q35、請問這首星光幫唱紅的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn35()" id="btn35">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes35">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ULcmgv837MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/36.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q36、請問這首星光幫唱紅的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn36()" id="btn36">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes36">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/XTHm55sTajg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/37.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q37、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn37()" id="btn37">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes37">
+					<audio controls>
+						<source src="music/37-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/38.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q38、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn38()" id="btn38">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes38">
+					<audio controls>
+						<source src="music/38-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/39.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q39、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn39()" id="btn39">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes39">
+					<audio controls>
+						<source src="music/39-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/40.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q40、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn40()" id="btn40">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes40">
+					<audio controls>
+						<source src="music/40-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/41.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q41、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn41()" id="btn41">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes41">
+					<audio controls>
+						<source src="music/41-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/42.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q42、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn42()" id="btn42">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes42">
+					<audio controls>
+						<source src="music/42-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/43.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q43、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn43()" id="btn43">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes43">
+					<audio controls>
+						<source src="music/43-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/44.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q44、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn44()" id="btn44">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes44">
+					<audio controls>
+						<source src="music/44-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/45.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q45、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn45()" id="btn45">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes45">
+					<audio controls>
+						<source src="music/45-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/46.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q46、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn46()" id="btn46">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes46">
+					<audio controls>
+						<source src="music/46-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/47.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q47、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn47()" id="btn47">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes47">
+					<audio controls>
+						<source src="music/47-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/48.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q48、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn48()" id="btn48">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes48">
+					<audio controls>
+						<source src="music/48-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/49.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q49、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn49()" id="btn49">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes49">
+					<audio controls>
+						<source src="music/49-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/50.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q50、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn50()" id="btn50">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes50">
+					<audio controls>
+						<source src="music/50-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/51.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q51、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn51()" id="btn51">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes51">
+					<audio controls>
+						<source src="music/51-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/52.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q52、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn52()" id="btn52">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes52">
+					<audio controls>
+						<source src="music/52-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/53.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q53、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn53()" id="btn53">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes53">
+					<audio controls>
+						<source src="music/53-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/54.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q54、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn54()" id="btn54">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes54">
+					<audio controls>
+						<source src="music/54-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-12">
+				<audio controls>
+					<source src="music/55.mp3" type="audio/mpeg">
+				</audio>
+				<h2>Q55、請問這首歌的最後一句是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn55()" id="btn55">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes55">
+					<audio controls>
+						<source src="music/55-1.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/56.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q56、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn56()" id="btn56">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes56">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ZOHsd6Zk7DM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/57.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q57、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn57()" id="btn54">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes57">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/gRhjGGOINLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/58.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q58、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn58()" id="btn58">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes58">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/HQ_mU73VhEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/59.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q59、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn59()" id="btn59">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes59">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/xHsSWiLsIRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/60.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q60、請問這首由中文歌詞翻譯成不標準的台語的中文歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn60()" id="btn60">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes60">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/oec9R5ypf-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>I need your love everyday<br>My mind is guessed by you<br>I love you<br>I just want you to make me wonderful everyday</h2>
+			<h2>Q61、請問這首由中文歌詞翻譯成英文的中文歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn61()" id="btn61">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes61">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/OviMqnsFNYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/62.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q62、請問這首倒過來念的歌詞的歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn62()" id="btn62">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes62">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/dB0t01rSLGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/63.mp3" type="audio/mpeg">
+			</audio>
+			<div id="hint63"></div>
+			<h2>Q63、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="hint63()" id="btn63-1">提示</button>
+			<button type="button" class="btn btn-primary" onclick="btn63()" id="btn63">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes63">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/KGrulNiJ6Uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/64.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q64、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn64()" id="btn64">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes64">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ZZ4rtMT-u-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/65.jpg" height="320">
+			<h2>Q65、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn65()" id="btn65">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes65">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ocDo3ySyHSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/66.jpg" height="320">
+			<h2>Q66、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn66()" id="btn66">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes66">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/QKb30DgwZ7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/67.jpg" height="320">
+			<h2>Q67、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn67()" id="btn67">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes67">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/K7LQArL-WgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/68.jpg" height="320">
+			<h2>Q68、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn68()" id="btn68">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes68">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/0fqWDR_Q6vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/69.jpg" height="320">
+			<h2>Q69、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn69()" id="btn69">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes69">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/mebzXfWi87E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/70.m4a" type="audio/mpeg">
+				</audio>
+				<h2>Q70、請問這三首歌歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn70()" id="btn70">按此輸入答案</button>
+				<div id="Yes70">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/71.wav" type="audio/mpeg">
+				</audio>
+				<h2>Q71、請問這三首歌歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn71()" id="btn71">按此輸入答案</button>
+				<div id="Yes71">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<audio controls>
+					<source src="music/72.m4a" type="audio/mpeg">
+				</audio>
+				<h2>Q72、請問這三首歌歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn72()" id="btn72">按此輸入答案</button>
+				<div id="Yes72">
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<audio controls>
+					<source src="music/73.m4a" type="audio/mpeg">
+				</audio>
+				<h2>Q73、請問這三首歌歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn73()" id="btn73">按此輸入答案</button>
+				<div id="Yes73">
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<audio controls>
+					<source src="music/74.m4a" type="audio/mpeg">
+				</audio>
+				<h2>Q74、請問這三首歌歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn74()" id="btn74">按此輸入答案</button>
+				<div id="Yes74">
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/75.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q75、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn75()" id="btn75">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes75">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Ew4VvF0DPMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/76.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q76、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn76()" id="btn76">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes76">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/dmwJaG-R1iM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/77.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q77、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn77()" id="btn77">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes77">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/9dK9Krc4QNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/78.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q78、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn78()" id="btn78">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes78">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/BBDPJ6mZmA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<h1>👆❤🏊☝🔪🧱<br>🥚👇🔍☝🌂🛌</h1>
+				<h2>Q79、請問這個由中文歌詞所改編成emoji的中文歌曲的歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn79()" id="btn79">按此輸入答案</button>
+				<div id="Yes79">
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<h1>🔧👩❤😘😢😊<br>✋🚪🙈🦂💪❌✂📄</h1>
+				<h2>Q80、請問這個由中文歌詞所改編成emoji的中文歌曲的歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn80()" id="btn80">按此輸入答案</button>
+				<div id="Yes80">
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<h1>👇❤👆👆4👇🐷💪🍃<br>👇🙆💩🏰☝💡🗻👴</h1>
+				<h2>Q81、請問這個由中文歌詞所改編成emoji的中文歌曲的歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn81()" id="btn81">按此輸入答案</button>
+				<div id="Yes81">
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<h1>👫👆👀🤙⭐☔<br>🍂🙈🌏⬆</h1>
+				<h2>Q82、請問這個由中文歌詞所改編成emoji的中文歌曲的歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn82()" id="btn82">按此輸入答案</button>
+				<div id="Yes82">
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12">
+				<h1>👆💩🔋<br>👆💩💡<br>👆💩🧣1👼🌺</h1>
+				<h2>Q83、請問這個由中文歌詞所改編成emoji的中文歌曲的歌名是??</h2>
+				<button type="button" class="btn btn-primary" onclick="btn83()" id="btn83">按此輸入答案</button>
+				<div id="Yes83">
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/84.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q84、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn84()" id="btn84">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes84">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/4iRupuNet3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/85.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q85、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn85()" id="btn85">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes85">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/2l4X4lGP_Zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/86.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q86、請問這首歌歌名是??</h2>
+			<button type="button" class="btn btn-primary" onclick="btn86()" id="btn86">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes86">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/KqjgLbKZ1h0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<footer class="my-5 pt-5 text-muted text-center text-small">
+    	<p class="mb-1">恭喜你完成了挑戰，希望你可以全對</p>
+    	<ul class="list-inline">
+      		<li class="list-inline-item"><a href="../../Game.html">回首頁</a></li>
+    	</ul>
+  	</footer>
+</body>
+</html>
