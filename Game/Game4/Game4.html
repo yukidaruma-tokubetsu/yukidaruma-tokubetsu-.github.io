@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>你贏得了電影系嗎！？</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style type="text/css">
+		.alert{ text-align: center;font-size:30px; }
+		*{ text-align: center; }
+		body{ background-color: #f5f5dc }
+		button { font-family: 標楷體;margin: 0 0 20px 0;}
+		#quiz{ float:left;width:42%; }
+		img{ margin: 50px; }
+		img:hover{ transform:scale(1.25,1.25); }
+		h1 { font-size: 90px; }
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="Answer4.js"></script>
+	<div class="container-fluid">
+		<div class="alert alert-danger" role="alert">
+  			電影台詞/主題曲/場景/經典橋段 你贏得了電影系嗎！？
+		</div>
+		<div id="quiz">
+			<h2>Q01、「Life is like a box of chocolates.<br>You never know what you’re gonna get.」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn01()" id="btn01">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes01">
+			<img src="picture/01.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q02、「不要只想著贏，要想不能輸」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn02()" id="btn02">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes02">
+			<img src="picture/02.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q03、「過去的傷痛固然存在，但你可以選擇逃避，或從中學習」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn03()" id="btn03">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes03">
+			<img src="picture/03.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q04、「不瘋魔，不成活」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn04()" id="btn04">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes04">
+			<img src="picture/04.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q05、「Life finds a way.」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn05()" id="btn05">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes05">
+			<img src="picture/05.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q06、「就算殺了一個我，還有千千萬萬個我。」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn06()" id="btn06">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes06">
+			<img src="picture/06.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q07、「因為離開你的人越來越多，所以留下來的人就越來越重要」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn07()" id="btn07">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes07">
+			<img src="picture/07.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q08、「Keep your friends close,but your enemies closer.」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn08()" id="btn08">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes08">
+			<img src="picture/08.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q09、「能力越大，責任越大！」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn09()" id="btn09">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes09">
+			<img src="picture/09.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q10、「人生本來很多事，就是徒勞無功的啊」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn10()" id="btn10">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes10">
+			<img src="picture/10.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q11、「我只能送你到這裡了，剩下的路你要自己走，不要回頭」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn11()" id="btn11">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes11">
+			<img src="picture/11.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q12、「想哭的時候就倒立，這樣眼淚就不會流下來了」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn12()" id="btn12">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes12">
+			<img src="picture/12.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q13、「親愛的，我從不看過去，那會讓我現在分心。」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn13()" id="btn13">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes13">
+			<img src="picture/13.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q14、「我們能觸摸的東西沒有「永遠」，師父一再的說：把手握緊，裡面什麼也沒有，把手鬆開，你擁有的是一切。」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn14()" id="btn14">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes14">
+			<img src="picture/14.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q15、「願機會對你永遠有利」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn15()" id="btn15">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes15">
+			<img src="picture/15.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q16、「我等了三年，我就要等一個機會，我不是想證明自己有多麼了不起，我只是要告訴別人，我失去了的東西，我一定要拿回來！」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn16()" id="btn16">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes16">
+			<img src="picture/16.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q17、「每個大人都曾經是小孩，但只有少數人記得。」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn17()" id="btn17">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes17">
+			<img src="picture/17.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q18、「做人要是沒有理想，那和鹹魚有什麼區別啊？」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn18()" id="btn18">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes18">
+			<img src="picture/18.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q19、「Great men are not to born great,they grow great.」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn19()" id="btn19">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes19">
+			<img src="picture/19.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>Q20、「要挺身而出對抗敵人的確需要很大的勇氣，但要挺身而出反抗朋友卻需要更大的勇氣，」</h2>
+			<button type="button" class="btn btn-danger" onclick="btn20()" id="btn20">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes20">
+			<img src="picture/20.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<img src="picture/21.jpg" height="320">
+			<h2>Q21、這是哪部電影的真實場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn21()" id="btn21">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes21">
+			<img src="picture/21-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/22.jpg" height="320">
+			<h2>Q22、這是哪部電影的真實場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn22()" id="btn22">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes22">
+			<img src="picture/22-1.jpg" height="320"><br>
+			星際效應
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/23.jpg" height="320">
+			<h2>Q23、這是哪部電影的真實場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn23()" id="btn23">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes23">
+			<img src="picture/23-1.jpg" height="320"><br>
+			臥虎藏龍
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/24.jpg" height="320">
+			<h2>Q24、這是哪部電影的場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn24()" id="btn24">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes24">
+			<img src="picture/24-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/25.jpg" height="320">
+			<h2>Q25、這是哪部電影的場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn25()" id="btn25">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes25">
+			<img src="picture/25-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<h1>🏰👦⚡🦉</h1>
+			<h2>Q26、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn26()" id="btn26">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes26">
+			<img src="picture/26.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h1>🍺👨👨👨🤣</h1>
+			<h2>Q27、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn27()" id="btn27">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes27">
+			<img src="picture/27.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h1>🤸🎪🐘🎼</h1>
+			<h2>Q28、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn28()" id="btn28">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes28">
+			<img src="picture/28.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/29.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q29、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn29()" id="btn29">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes29">
+			<img src="picture/29.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/30.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q30、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn30()" id="btn30">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes30">
+			<img src="picture/30.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/31.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q31、這是哪部電影??（當集名字也要喔）</h2>
+			<button type="button" class="btn btn-danger" onclick="btn31()" id="btn31">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes31">
+			<img src="picture/31.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<audio controls>
+				<source src="music/32.mp3" type="audio/mpeg">
+			</audio>
+			<h2>Q32、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn32()" id="btn32">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes32">
+			<img src="picture/32.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<video controls height="320">
+				<source src="video/33.mp4" type="video/mp4">
+			</video>
+			<h2>Q33、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn33()" id="btn33">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes33">
+			<img src="picture/33.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<video controls height="320">
+				<source src="video/34.mp4" type="video/mp4">
+			</video>
+			<h2>Q34、這是哪部電影??（第幾集也要喔）</h2>
+			<button type="button" class="btn btn-danger" onclick="btn34()" id="btn34">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes34">
+			<img src="picture/34.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<video controls height="320">
+				<source src="video/35.mp4" type="video/mp4">
+			</video>
+			<h2>Q35、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn35()" id="btn35">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes35">
+			<img src="picture/35.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<video controls height="320">
+				<source src="video/36.mp4" type="video/mp4">
+			</video>
+			<h2>Q36、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn36()" id="btn36">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes36">
+			<img src="picture/36.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<h2>Q37、以下哪部戲李奧納多沒有演出??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn37_1()" id="btn37-1">
+			華爾街之狼
+		</button><br>
+		<button type="button" class="btn btn-danger" onclick="btn37_1()" id="btn37-2">
+			決殺令
+		</button><br>
+		<button type="button" class="btn btn-danger" onclick="btn37_1()" id="btn37-3">
+			大亨小傳
+		</button><br>
+		<button type="button" class="btn btn-danger" onclick="btn37_2()" id="btn37-4">
+			神鬼傳奇
+		</button>
+		<div id="Yes37">
+		</div>
+		<hr class="my-4">
+		<h2>Q38、請問珍妮佛勞倫斯在《飢餓遊戲》中，飾演的角色全名叫什麼??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn38()" id="btn38">按此輸入答案</button>
+		<div id="Yes38">
+		</div>
+		<hr class="my-4">
+		<h2>Q39、請問電影《越來越愛你》中，男主角是由那個演員飾演的??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn39()" id="btn39">按此輸入答案</button>
+		<div id="Yes39">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>男1：「Beautiful~」</h2>
+			<h2>女：「Thats where he belongs~」</h2>
+			<h2>男2：「Home~」</h2>
+			<h2>Q40、這是哪部電影??（第幾集也要喔）</h2>
+			<button type="button" class="btn btn-danger" onclick="btn40()" id="btn40">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes40">
+			<img src="picture/40.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>男：「我是咩上台表演的捏！」</h2>
+			<h2>男：「幹！」</h2>
+			<h2>男：「我是國寶勒！」</h2>
+			<h2>Q41、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn41()" id="btn41">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes41">
+			<img src="picture/41.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>男1：「我今天運氣好像不錯」</h2>
+			<h2>男2：「（笑）運氣好的不只你一個喔」</h2>
+			<h2>男2：「（出牌）」</h2>
+			<h2>Q42、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn42()" id="btn42">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes42">
+			<img src="picture/42.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>女：「（右手舉高）No~~~~~~~~~」</h2>
+			<h2>Q43、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn43()" id="btn43">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes43">
+			<img src="picture/43.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<h2>男1：「You guys can't just keep me here!」</h2>
+			<h2>男2：「I can't let you leave!」</h2>
+			<h2>男1：「Why would you tell me what's out there?」</h2>
+			<h2>Q44、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn44()" id="btn44">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes44">
+			<img src="picture/44.jpg" height="320">
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Q45、以下哪部電影集數比較多??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn45_1()" id="btn45-1">
+					飢餓遊戲
+				</button><br>
+				<button type="button" class="btn btn-danger" onclick="btn45_1()" id="btn45-2">
+					葉問
+				</button><br>
+				<button type="button" class="btn btn-danger" onclick="btn45_2()" id="btn45-3">
+					變形金剛
+				</button><br>
+				<button type="button" class="btn btn-danger" onclick="btn45_1()" id="btn45-4">
+					玩具總動員
+				</button><br>
+				<div id="Yes45">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h2>Q46、請問誰有得過奧斯卡最佳男主角??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn46_1()" id="btn46-1">
+					湯姆克魯斯
+				</button><br>
+				<button type="button" class="btn btn-danger" onclick="btn46_1()" id="btn46-2">
+					威爾史密斯
+				</button><br>
+				<button type="button" class="btn btn-danger" onclick="btn46_1()" id="btn46-3">
+					布萊德利庫柏
+				</button><br>
+				<button type="button" class="btn btn-danger" onclick="btn46_2()" id="btn46-4">
+					艾迪瑞德曼
+				</button><br>
+				<div id="Yes46">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h2>Q47、以下哪部電影不是由小說翻拍的??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn47_1()" id="btn47-1">
+					格雷的五十道陰影
+				</button><br>
+				<button type="button" class="btn btn-danger" onclick="btn47_1()" id="btn47-2">
+					模仿遊戲
+				</button><br>
+				<button type="button" class="btn btn-danger" onclick="btn47_2()" id="btn47-3">
+					一個巨星的誕生
+				</button><br>
+				<button type="button" class="btn btn-danger" onclick="btn47_1()" id="btn47-4">
+					生命中的美好缺憾
+				</button><br>
+				<div id="Yes47">
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<h2>Q48、請問電影《林肯》的導演是誰??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn48()" id="btn48">按此輸入答案</button>
+		<div style="visibility:hidden;" id="Yes48">
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-md-4">
+				<h2>「Inception」</h2>
+				<h2>Q49、請問此外國的片名在台灣是哪部電影的名字??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn49()" id="btn49">按此輸入答案</button>
+				<div id="Yes49">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h2>「後天」</h2>
+				<h2>Q50、請問此外國的片名在台灣是哪部電影的名字??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn50()" id="btn50">按此輸入答案</button>
+				<div id="Yes50">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h2>「做死不離三兄弟」</h2>
+				<h2>Q51、請問此外國的片名在台灣是哪部電影的名字??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn51()" id="btn51">按此輸入答案</button>
+				<div id="Yes51">
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<h2>「Get Out」</h2>
+		<h2>Q52、請問此外國的片名在台灣是哪部電影的名字??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn52()" id="btn52">按此輸入答案</button>
+		<div id="Yes52">
+		</div>
+		<hr class="my-4">
+		<h2>「機器人總動員」</h2>
+		<h2>Q53、請問此外國的片名在台灣是哪部電影的名字??</h2>
+		<button type="button" class="btn btn-danger" onclick="btn53()" id="btn53">按此輸入答案</button>
+		<div id="Yes53">
+		</div>
+		<hr class="my-4">
+		<div id="quiz">
+			<img src="picture/54.jpg" height="320">
+			<h2>Q54、這是哪部愛情電影的場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn54()" id="btn54">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes54">
+			<img src="picture/54-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/55.jpg" height="320">
+			<h2>Q55、這是哪部愛情電影的場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn55()" id="btn55">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes55">
+			<img src="picture/55-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/56.jpg" height="320">
+			<h2>Q56、這是哪部愛情電影的場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn56()" id="btn56">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes56">
+			<img src="picture/56-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/57.jpg" height="320">
+			<h2>Q57、這是哪部愛情電影的場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn57()" id="btn57">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes57">
+			<img src="picture/57-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/58.jpg" height="320">
+			<h2>Q58、這是哪部愛情電影的場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn58()" id="btn58">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes58">
+			<img src="picture/58-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/59.jpg" height="320">
+			<h2>Q59、這是哪部電影的叢林場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn59()" id="btn59">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes59">
+			<img src="picture/59-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/60.jpg" height="320">
+			<h2>Q60、這是哪部電影的叢林場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn60()" id="btn60">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes60">
+			<img src="picture/60-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/61.jpg" height="320">
+			<h2>Q61、這是哪部電影的叢林場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn61()" id="btn61">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes61">
+			<img src="picture/61-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/62.jpg" height="320">
+			<h2>Q62、這是哪部電影的叢林場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn62()" id="btn62">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes62">
+			<img src="picture/62-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/63.jpg" height="320">
+			<h2>Q63、這是哪部電影的叢林場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn63()" id="btn63">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes63">
+			<img src="picture/63-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/64.jpg" height="320">
+			<h2>Q64、這是哪部電影的街道場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn64()" id="btn64">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes64">
+			<img src="picture/64-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/65.jpg" height="320">
+			<h2>Q65、這是哪部電影的街道場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn65()" id="btn65">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes65">
+			<img src="picture/65-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/66.jpg" height="320">
+			<h2>Q66、這是哪部電影的街道場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn66()" id="btn66">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes66">
+			<img src="picture/66-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/67.jpg" height="320">
+			<h2>Q67、這是哪部電影的街道場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn67()" id="btn67">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes67">
+			<img src="picture/67-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/68.jpg" height="320">
+			<h2>Q68、這是哪部電影的街道場景??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn68()" id="btn68">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes68">
+			<img src="picture/68-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/69.jpg" height="320">
+			<h2>Q69、這是哪部電影的動物??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn69()" id="btn69">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes69">
+			<img src="picture/69-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/70.jpg" height="320">
+			<h2>Q70、這是哪部電影的動物??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn70()" id="btn70">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes70">
+			<img src="picture/70-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/71.jpg" height="320">
+			<h2>Q71、這是哪部電影的動物??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn71()" id="btn71">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes71">
+			<img src="picture/71-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/72.jpg" height="320">
+			<h2>Q72、這是哪部電影的動物??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn72()" id="btn72">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes72">
+			<img src="picture/72-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/73.jpg" height="320">
+			<h2>Q73、這是哪部電影的動物??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn73()" id="btn73">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes73">
+			<img src="picture/73-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/74.jpg" height="320">
+			<h2>Q74、這是哪部動畫電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn74()" id="btn74">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes74">
+			<img src="picture/74-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/75.jpg" height="320">
+			<h2>Q75、這是哪部動畫電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn75()" id="btn75">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes75">
+			<img src="picture/75-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/76.jpg" height="320">
+			<h2>Q76、這是哪部動畫電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn76()" id="btn76">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes76">
+			<img src="picture/76-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/77.jpg" height="320">
+			<h2>Q77、這是哪部動畫電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn77()" id="btn77">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes77">
+			<img src="picture/77-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/78.jpg" height="320">
+			<h2>Q78、這是哪部動畫電影??（當集名稱也要寫）</h2>
+			<button type="button" class="btn btn-danger" onclick="btn78()" id="btn78">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes78">
+			<img src="picture/78-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/79.jpg" height="320">
+			<h2>Q79、這是哪部電影的交通工具??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn79()" id="btn79">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes79">
+			<img src="picture/79-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/80.jpg" height="320">
+			<h2>Q80、這是哪部電影的交通工具??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn80()" id="btn80">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes80">
+			<img src="picture/80-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/81.jpg" height="320">
+			<h2>Q81、這是哪部電影的交通工具??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn81()" id="btn81">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes81">
+			<img src="picture/81-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/82.jpg" height="320">
+			<h2>Q82、這是哪部電影的交通工具??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn82()" id="btn82">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes82">
+			<img src="picture/82-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/83.jpg" height="320">
+			<h2>Q83、這是哪部電影的交通工具??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn83()" id="btn83">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes83">
+			<img src="picture/83-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/84.jpg" height="320">
+			<h2>Q84、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn84()" id="btn84">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes84">
+			<img src="picture/84-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/85.jpg" height="320">
+			<h2>Q85、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn85()" id="btn85">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes85">
+			<img src="picture/85-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/86.jpg" height="320">
+			<h2>Q86、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn86()" id="btn86">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes86">
+			<img src="picture/86-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/87.jpg" height="320">
+			<h2>Q87、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn87()" id="btn87">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes87">
+			<img src="picture/87-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/88.jpg" height="320">
+			<h2>Q88、這是哪部電影??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn88()" id="btn88">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes88">
+			<img src="picture/88-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/89.jpg" height="320">
+			<h2>Q89、這是哪部電影的家??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn89()" id="btn89">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes89">
+			<img src="picture/89-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/90.jpg" height="320">
+			<h2>Q90、這是哪部電影的家??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn90()" id="btn90">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes90">
+			<img src="picture/90-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/91.jpg" height="320">
+			<h2>Q91、這是哪部電影的家??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn91()" id="btn91">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes91">
+			<img src="picture/91-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/92.jpg" height="320">
+			<h2>Q92、這是哪部電影的家??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn92()" id="btn92">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes92">
+			<img src="picture/92-1.jpg" height="320">
+		</div>
+		<hr class="my-4" style="clear: both;">
+		<div id="quiz">
+			<img src="picture/93.jpg" height="320">
+			<h2>Q93、這是哪部電影的家??</h2>
+			<button type="button" class="btn btn-danger" onclick="btn93()" id="btn93">按此輸入答案</button>
+		</div>
+		<div style="visibility:hidden;" id="Yes93">
+			<img src="picture/93-1.jpg" height="320">
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<footer class="my-5 pt-5 text-muted text-center text-small" style="clear: both;">
+    	<p class="mb-1">恭喜你完成了挑戰，希望你可以全對</p>
+    	<ul class="list-inline">
+      		<li class="list-inline-item"><a href="../../Game.html">回首頁</a></li>
+    	</ul>
+  	</footer>
+</body>
+</html>
