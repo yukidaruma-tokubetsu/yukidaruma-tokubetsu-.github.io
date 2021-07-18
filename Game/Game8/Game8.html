@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>品牌LOGO！你認得出來嗎！</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style type="text/css">
+		.alert{ text-align: center;font-size:30px; }
+		*{ text-align: center; }
+		body{ background-color: #f5f5dc }
+		button { font-family: 標楷體;margin: 0 0 10px 0;}
+		#quiz{ float:left;width:42%;margin: 80px; }
+		.col-12 img { margin: 25px; }
+		img:hover{ transform:scale(1.25,1.25); }
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="Answer8.js"></script>
+	<div class="container-fluid">
+		<div class="alert alert-secondary" role="alert">
+  			品牌LOGO！你認得出來嗎！
+		</div>
+		<div class="row">
+      		<div class="col-12 col-md-4">
+				<img src="picture/01.jpg" height="220">
+				<h2>Q01、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn01()" id="btn01">按此輸入答案</button>
+				<div id="Yes01">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/02.jpg" height="220">
+				<h2>Q02、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn02()" id="btn02">按此輸入答案</button>
+				<div id="Yes02">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/03.jpg" height="220">
+				<h2>Q03、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn03()" id="btn03">按此輸入答案</button>
+				<div id="Yes03">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/04.jpg" height="220">
+				<h2>Q04、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn04()" id="btn04">按此輸入答案</button>
+				<div id="Yes04">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<h2>「德國」、「運動品牌」、「三角形」</h2>
+				<h2>Q05、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn05()" id="btn05">按此輸入答案</button>
+				<div id="Yes05">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<h2>「一個人在圓圈裡」、「必備良藥」</h2>
+				<h2>Q06、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn06()" id="btn06">按此輸入答案</button>
+				<div id="Yes06">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<h2>「人頭」、「中年大叔」、「台灣美食小吃」</h2>
+				<h2>Q07、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn07()" id="btn07">按此輸入答案</button>
+				<div id="Yes07">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<h2>「雙尾美人魚」</h2>
+				<h2>Q08、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn08()" id="btn08">按此輸入答案</button>
+				<div id="Yes08">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<h2>「四個顏色」、「六個英文字母」、「搜尋引擎」</h2>
+				<h2>Q09、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn09()" id="btn09">按此輸入答案</button>
+				<div id="Yes09">
+				</div>
+			</div>
+			<div id="quiz">
+				<img src="picture/10.png" height="220"><br><br>
+				<h2>Q10、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn10()" id="btn10">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes10">
+				<img src="picture/10.jpg" height="220">
+			</div>
+			<div id="quiz">
+				<img src="picture/11.png" height="220"><br><br>
+				<h2>Q11、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn11()" id="btn11">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes11">
+				<img src="picture/11-1.png" height="220">
+			</div>
+			<div id="quiz">
+				<img src="picture/12.png" height="220"><br><br>
+				<h2>Q12、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn12()" id="btn12">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes12">
+				<img src="picture/12-1.png" height="220">
+			</div>
+			<div id="quiz">
+				<img src="picture/13.png" height="220"><br><br>
+				<h2>Q13、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn13()" id="btn13">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes13">
+				<img src="picture/13-1.png" height="220">
+			</div>
+			<div id="quiz">
+				<img src="picture/14.png" height="220"><br><br>
+				<h2>Q14、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn14()" id="btn14">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes14">
+				<img src="picture/14-1.png" height="220">
+			</div>
+			<div id="quiz">
+				<img src="picture/15.jpg" height="220"><br><br>
+				<h2>Q15、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn15()" id="btn15">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes15">
+				<img src="picture/15-1.jpg" height="220">
+			</div>
+			<div id="quiz">
+				<img src="picture/16.jpg" height="220"><br><br>
+				<h2>Q16、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn16()" id="btn16">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes16">
+				<img src="picture/16-1.jpg" height="220">
+			</div>
+			<div id="quiz">
+				<img src="picture/17.jpg" height="220"><br><br>
+				<h2>Q17、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn17()" id="btn17">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes17">
+				<img src="picture/17-1.jpg" height="220">
+			</div>
+      		<div class="col-12 col-md-12">
+				<img src="picture/18.jpg" height="220">
+				<h2>Q18、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn18()" id="btn18">按此輸入答案</button>
+				<div style="visibility:hidden;" id="Yes18">
+					<img src="picture/18-1.jpg" height="220">
+				</div>
+			</div>
+			<div></div>
+			<div id="quiz">
+				<img src="picture/19.png" height="220"><br><br>
+				<h2>Q19、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn19()" id="btn19">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes19">
+				<img src="picture/19-1.jpg" height="220">
+			</div>
+			<div id="quiz">
+				<img src="picture/20.jpg" height="220"><br><br>
+				<h2>Q20、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn20()" id="btn20">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes20">
+				<img src="picture/20-1.jpg" height="220">
+			</div>
+			<div id="quiz">
+				<img src="picture/21.png" height="220"><br><br>
+				<h2>Q21、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn21()" id="btn21">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes21">
+				<img src="picture/21-1.png" height="170">
+			</div>
+			<div id="quiz">
+				<img src="picture/22.png" height="220"><br><br>
+				<h2>Q22、這是什麼品牌的LOGO??</h2>
+				<button type="button" class="btn btn-secondary" onclick="btn22()" id="btn22">按此輸入答案</button>
+			</div>
+			<div style="visibility:hidden;margin: 85px 0 0 0" id="Yes22">
+				<img src="picture/22-1.png" height="170">
+			</div>
+			<div class="col-12 col-md-4">
+				<h2>「帶著一頂紳士帽」、「顏色有黑色根白色」、「露出胸部以上」</h2>
+				<h2>Q23、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn23()" id="btn23">按此輸入答案</button>
+				<div id="Yes23">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<h2>「I'm Lovein' it」</h2>
+				<h2>Q24、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn24()" id="btn24">按此輸入答案</button>
+				<div id="Yes24">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<h2>「紅色的資」、「延伸出外面三條藍色的圈圈」、「有一個火把在裡面」</h2>
+				<h2>Q25、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn25()" id="btn25">按此輸入答案</button>
+				<div id="Yes25">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<h2>「logo有五個英文字母」、「顏色是紫色」</h2>
+				<h2>Q26、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn26()" id="btn26">按此輸入答案</button>
+				<div id="Yes26">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/27.jpg" height="220"><br><br>
+				<h2>Q27、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn27()" id="btn27">按此輸入答案</button>
+				<div id="Yes27">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/28.jpg" height="220"><br><br>
+				<h2>Q28、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn28()" id="btn28">按此輸入答案</button>
+				<div id="Yes28">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/29.jpg" height="220"><br><br>
+				<h2>Q29、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn29()" id="btn29">按此輸入答案</button>
+				<div id="Yes29">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/30.jpg" height="220"><br><br>
+				<h2>Q30、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn30()" id="btn30">按此輸入答案</button>
+				<div id="Yes30">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/31.jpg" height="220"><br><br>
+				<h2>Q31、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn31()" id="btn31">按此輸入答案</button>
+				<div id="Yes31">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/32.jpg" height="220"><br><br>
+				<h2>Q32、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn32()" id="btn32">按此輸入答案</button>
+				<div id="Yes32">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/33.jpg" height="220"><br><br>
+				<h2>Q33、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn33()" id="btn33">按此輸入答案</button>
+				<div id="Yes33">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/34.jpg" height="220"><br><br>
+				<h2>Q34、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn34()" id="btn34">按此輸入答案</button>
+				<div id="Yes34">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/35.jpg" height="220"><br><br>
+				<h2>Q35、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn35()" id="btn35">按此輸入答案</button>
+				<div id="Yes35">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/36.png" height="220"><br><br>
+				<h2>Q36、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn36()" id="btn36">按此輸入答案</button>
+				<div id="Yes36">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/37.jpg" height="220"><br><br>
+				<h2>Q37、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn37()" id="btn37">按此輸入答案</button>
+				<div id="Yes37">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/38.jpg" height="220"><br><br>
+				<h2>Q38、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn38()" id="btn38">按此輸入答案</button>
+				<div id="Yes38">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/39.jpg" height="220"><br><br>
+				<h2>Q39、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn39()" id="btn39">按此輸入答案</button>
+				<div id="Yes39">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/40.jpg" height="220"><br><br>
+				<h2>Q40、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn40()" id="btn40">按此輸入答案</button>
+				<div id="Yes40">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/41.jpg" height="220"><br><br>
+				<h2>Q41、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn41()" id="btn41">按此輸入答案</button>
+				<div id="Yes41">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/42.jpg" height="220"><br><br>
+				<h2>Q42、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn42()" id="btn42">按此輸入答案</button>
+				<div id="Yes42">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/43.jpg" height="220"><br><br>
+				<h2>Q43、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn43()" id="btn43">按此輸入答案</button>
+				<div id="Yes43">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/44.jpg" height="220"><br><br>
+				<h2>Q44、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn44()" id="btn44">按此輸入答案</button>
+				<div id="Yes44">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/45.jpg" height="220"><br><br>
+				<h2>Q45、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn45()" id="btn45">按此輸入答案</button>
+				<div id="Yes45">
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/46.jpg" height="220"><br><br>
+				<h2>Q46、這是什麼品牌??</h2>
+				<button type="button" class="btn btn btn-secondary" onclick="btn46()" id="btn46">按此輸入答案</button>
+				<div id="Yes46">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<footer class="my-5 pt-5 text-muted text-center text-small">
+    	<p class="mb-1">恭喜你完成了挑戰，希望你可以全對</p>
+    	<ul class="list-inline">
+      		<li class="list-inline-item"><a href="../../Game.html">回首頁</a></li>
+    	</ul>
+  	</footer>
+</body>
+</html>
