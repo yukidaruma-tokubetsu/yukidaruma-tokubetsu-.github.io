@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>你是裝熟王嗎！？</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.alert{ text-align: center;font-size:30px; }
+		*{ text-align: center; }
+		body{ background-color: #f5f5dc }
+		button { font-family: 標楷體;margin: 0 0 20px 0;}
+		footer { clear: both; }
+		img { margin: 25px; }
+		img:hover{ transform:scale(1.25,1.25); }
+		.col-12 div { font-family: 標楷體; }
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="Answer16.js"></script>
+	<div class="container-fluid">
+		<div class="alert alert-danger" role="alert">
+	  		這個人的名字你叫得出來嗎？你是裝熟王！？
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/01.jpg" height="220">
+				<h2>Q01、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn01()" id="btn01">按此輸入答案</button>
+				<div id="Yes01"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/02.jpg" height="220">
+				<h2>Q02、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn02()" id="btn02">按此輸入答案</button>
+				<div id="Yes02"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/03.jpg" height="220">
+				<h2>Q03、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn03()" id="btn03">按此輸入答案</button>
+				<div id="Yes03"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/04.jpg" height="220">
+				<h2>Q04、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn04()" id="btn04">按此輸入答案</button>
+				<div id="Yes04"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/05.jpg" height="220">
+				<h2>Q05、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn05()" id="btn05">按此輸入答案</button>
+				<div id="Yes05"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/06.png" height="220">
+				<h2>Q06、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn06()" id="btn06">按此輸入答案</button>
+				<div id="Yes06"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/07.jpg" height="220">
+				<h2>Q07、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn07()" id="btn07">按此輸入答案</button>
+				<div id="Yes07"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/08.jpg" height="220">
+				<h2>Q08、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn08()" id="btn08">按此輸入答案</button>
+				<div id="Yes08"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/09.jpg" height="220">
+				<h2>Q09、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn09()" id="btn09">按此輸入答案</button>
+				<div id="Yes09"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/10.jpg" height="220">
+				<h2>Q10、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn10()" id="btn10">按此輸入答案</button>
+				<div id="Yes10"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/11.jpg" height="220">
+				<h2>Q11、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn11()" id="btn11">按此輸入答案</button>
+				<div id="Yes11"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/12.jpg" height="220">
+				<h2>Q12、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn12()" id="btn12">按此輸入答案</button>
+				<div id="Yes12"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/13.jpg" height="220">
+				<h2>Q13、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn13()" id="btn13">按此輸入答案</button>
+				<div id="Yes13"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/14.jpg" height="220">
+				<h2>Q14、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn14()" id="btn14">按此輸入答案</button>
+				<div id="Yes14"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/15.jpg" height="220">
+				<h2>Q15、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn15()" id="btn15">按此輸入答案</button>
+				<div id="Yes15"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/16.jpg" height="220">
+				<h2>Q16、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn16()" id="btn16">按此輸入答案</button>
+				<div id="Yes16"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/17.jpg" height="220">
+				<h2>Q17、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn17()" id="btn17">按此輸入答案</button>
+				<div id="Yes17"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/18.jpg" height="220">
+				<h2>Q18、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn18()" id="btn18">按此輸入答案</button>
+				<div id="Yes18"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/19.jpg" height="220">
+				<h2>Q19、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn19()" id="btn19">按此輸入答案</button>
+				<div id="Yes19"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/20.jpg" height="220">
+				<h2>Q20、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn20()" id="btn20">按此輸入答案</button>
+				<div id="Yes20"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/21.jpg" height="220">
+				<h2>Q21、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn21()" id="btn21">按此輸入答案</button>
+				<div id="Yes21"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/22.jpg" height="220">
+				<h2>Q22、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn22()" id="btn22">按此輸入答案</button>
+				<div id="Yes22"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/23.jpg" height="220">
+				<h2>Q23、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn23()" id="btn23">按此輸入答案</button>
+				<div id="Yes23"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/24.jfif" height="220">
+				<h2>Q24、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn24()" id="btn24">按此輸入答案</button>
+				<div id="Yes24"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/25.png" height="220">
+				<h2>Q25、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn25()" id="btn25">按此輸入答案</button>
+				<div id="Yes25"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/26.jpg" height="220">
+				<h2>Q26、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn26()" id="btn26">按此輸入答案</button>
+				<div id="Yes26"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/27.png" height="220">
+				<h2>Q27、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn27()" id="btn27">按此輸入答案</button>
+				<div id="Yes27"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/28.jpg" height="220">
+				<h2>Q28、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn28()" id="btn28">按此輸入答案</button>
+				<div id="Yes28"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/29.jpeg" height="220">
+				<h2>Q29、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn29()" id="btn29">按此輸入答案</button>
+				<div id="Yes29"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/30.jpg" height="220">
+				<h2>Q30、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn30()" id="btn30">按此輸入答案</button>
+				<div id="Yes30"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/31.jpg" height="220">
+				<h2>Q31、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn31()" id="btn31">按此輸入答案</button>
+				<div id="Yes31"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/32.jpg" height="220">
+				<h2>Q32、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn32()" id="btn32">按此輸入答案</button>
+				<div id="Yes32"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/33.jfif" height="220">
+				<h2>Q33、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn33()" id="btn33">按此輸入答案</button>
+				<div id="Yes33"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/34.jpg" height="220">
+				<h2>Q34、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn34()" id="btn34">按此輸入答案</button>
+				<div id="Yes34"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/35.jpg" height="220">
+				<h2>Q35、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn35()" id="btn35">按此輸入答案</button>
+				<div id="Yes35"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/36.jpg" height="220">
+				<h2>Q36、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn36()" id="btn36">按此輸入答案</button>
+				<div id="Yes36"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/37.jpg" height="220">
+				<h2>Q37、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn37()" id="btn37">按此輸入答案</button>
+				<div id="Yes37"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/38.jpg" height="220">
+				<h2>Q38、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn38()" id="btn38">按此輸入答案</button>
+				<div id="Yes38"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/39.jpg" height="220">
+				<h2>Q39、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn39()" id="btn39">按此輸入答案</button>
+				<div id="Yes39"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/40.jpg" height="220">
+				<h2>Q40、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn40()" id="btn40">按此輸入答案</button>
+				<div id="Yes40"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/41.jfif" height="220">
+				<h2>Q41、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn41()" id="btn41">按此輸入答案</button>
+				<div id="Yes41"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/42.jpg" height="220">
+				<h2>Q42、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn42()" id="btn42">按此輸入答案</button>
+				<div id="Yes42"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/43.jpg" height="220">
+				<h2>Q43、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn43()" id="btn43">按此輸入答案</button>
+				<div id="Yes43"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/44.jpg" height="220">
+				<h2>Q44、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn44()" id="btn44">按此輸入答案</button>
+				<div id="Yes44"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/45.jfif" height="220">
+				<h2>Q45、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn45()" id="btn45">按此輸入答案</button>
+				<div id="Yes45"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/46.jpg" height="220">
+				<h2>Q46、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn46()" id="btn46">按此輸入答案</button>
+				<div id="Yes46"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/47.jpg" height="220">
+				<h2>Q47、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn47()" id="btn47">按此輸入答案</button>
+				<div id="Yes47"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/48.jpg" height="220">
+				<h2>Q48、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn48()" id="btn48">按此輸入答案</button>
+				<div id="Yes48"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/49.jpeg" height="220">
+				<h2>Q49、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn49()" id="btn49">按此輸入答案</button>
+				<div id="Yes49"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/50.jpg" height="220">
+				<h2>Q50、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn50()" id="btn50">按此輸入答案</button>
+				<div id="Yes50"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/51.jpg" height="220">
+				<h2>Q51、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn51()" id="btn51">按此輸入答案</button>
+				<div id="Yes51"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/52.jpg" height="220">
+				<h2>Q52、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn52()" id="btn52">按此輸入答案</button>
+				<div id="Yes52"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/53.jpg" height="220">
+				<h2>Q53、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn53()" id="btn53">按此輸入答案</button>
+				<div id="Yes53"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/54.jpg" height="220">
+				<h2>Q54、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn54()" id="btn54">按此輸入答案</button>
+				<div id="Yes54"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/55.jpg" height="220">
+				<h2>Q55、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn55()" id="btn55">按此輸入答案</button>
+				<div id="Yes55"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/56.jpg" height="220">
+				<h2>Q56、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn56()" id="btn56">按此輸入答案</button>
+				<div id="Yes56"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/57.jpg" height="220">
+				<h2>Q57、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn57()" id="btn57">按此輸入答案</button>
+				<div id="Yes57"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/58.jpg" height="220">
+				<h2>Q58、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn58()" id="btn58">按此輸入答案</button>
+				<div id="Yes58"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/59.jpg" height="220">
+				<h2>Q59、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn59()" id="btn59">按此輸入答案</button>
+				<div id="Yes59"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/60.jfif" height="220">
+				<h2>Q60、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn60()" id="btn60">按此輸入答案</button>
+				<div id="Yes60"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/61.jpg" height="220">
+				<h2>Q61、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn61()" id="btn61">按此輸入答案</button>
+				<div id="Yes61"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/62.jpg" height="220">
+				<h2>Q62、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn62()" id="btn62">按此輸入答案</button>
+				<div id="Yes62"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/63.jpg" height="220">
+				<h2>Q63、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn63()" id="btn63">按此輸入答案</button>
+				<div id="Yes63"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/64.png" height="220">
+				<h2>Q64、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn64()" id="btn64">按此輸入答案</button>
+				<div id="Yes64"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/65.jpg" height="220">
+				<h2>Q65、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn65()" id="btn65">按此輸入答案</button>
+				<div id="Yes65"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/66.jpg" height="220">
+				<h2>Q66、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn66()" id="btn66">按此輸入答案</button>
+				<div id="Yes66"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/67.jfif" height="220">
+				<h2>Q67、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn67()" id="btn67">按此輸入答案</button>
+				<div id="Yes67"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/68.jpg" height="220">
+				<h2>Q68、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn68()" id="btn68">按此輸入答案</button>
+				<div id="Yes68"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/69.jpg" height="220">
+				<h2>Q69、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn69()" id="btn69">按此輸入答案</button>
+				<div id="Yes69"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/70.jpeg" height="220">
+				<h2>Q70、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn70()" id="btn70">按此輸入答案</button>
+				<div id="Yes70"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/71.jpg" height="220">
+				<h2>Q71、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn71()" id="btn71">按此輸入答案</button>
+				<div id="Yes71"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/72.jpg" height="220">
+				<h2>Q72、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn72()" id="btn72">按此輸入答案</button>
+				<div id="Yes72"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/73.jpg" height="220">
+				<h2>Q73、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn73()" id="btn73">按此輸入答案</button>
+				<div id="Yes73"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/74.jpg" height="220">
+				<h2>Q74、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn74()" id="btn74">按此輸入答案</button>
+				<div id="Yes74"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/75.jpg" height="220">
+				<h2>Q75、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn75()" id="btn75">按此輸入答案</button>
+				<div id="Yes75"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/76.jpg" height="220">
+				<h2>Q76、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn76()" id="btn76">按此輸入答案</button>
+				<div id="Yes76"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/77.jpg" height="220">
+				<h2>Q77、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn77()" id="btn77">按此輸入答案</button>
+				<div id="Yes77"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/78.png" height="220">
+				<h2>Q78、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn78()" id="btn78">按此輸入答案</button>
+				<div id="Yes78"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/79.jpg" height="220">
+				<h2>Q79、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn79()" id="btn79">按此輸入答案</button>
+				<div id="Yes79"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/80.jpg" height="220">
+				<h2>Q80、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn80()" id="btn80">按此輸入答案</button>
+				<div id="Yes80"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/81.jfif" height="220">
+				<h2>Q81、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn81()" id="btn81">按此輸入答案</button>
+				<div id="Yes81"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/82.jpg" height="220">
+				<h2>Q82、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn82()" id="btn82">按此輸入答案</button>
+				<div id="Yes82"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/83.jpg" height="220">
+				<h2>Q83、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn83()" id="btn83">按此輸入答案</button>
+				<div id="Yes83"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/84.jpg" height="220">
+				<h2>Q84、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn84()" id="btn84">按此輸入答案</button>
+				<div id="Yes84"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/85.jpg" height="220">
+				<h2>Q85、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn85()" id="btn85">按此輸入答案</button>
+				<div id="Yes85"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/86.jfif" height="220">
+				<h2>Q86、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn86()" id="btn86">按此輸入答案</button>
+				<div id="Yes86"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/87.jfif" height="220">
+				<h2>Q87、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn87()" id="btn87">按此輸入答案</button>
+				<div id="Yes87"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/88.jfif" height="220">
+				<h2>Q88、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn88()" id="btn88">按此輸入答案</button>
+				<div id="Yes88"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/89.jpg" height="220">
+				<h2>Q89、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn89()" id="btn89">按此輸入答案</button>
+				<div id="Yes89"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/90.jpg" height="220">
+				<h2>Q90、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn90()" id="btn90">按此輸入答案</button>
+				<div id="Yes90"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/91.jpg" height="220">
+				<h2>Q91、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn91()" id="btn91">按此輸入答案</button>
+				<div id="Yes91"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/92.png" height="220">
+				<h2>Q92、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn92()" id="btn92">按此輸入答案</button>
+				<div id="Yes92"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/93.jpg" height="220">
+				<h2>Q93、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn93()" id="btn93">按此輸入答案</button>
+				<div id="Yes93"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/94.jpg" height="220">
+				<h2>Q94、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn94()" id="btn94">按此輸入答案</button>
+				<div id="Yes94"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/95.jpg" height="220">
+				<h2>Q95、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn95()" id="btn95">按此輸入答案</button>
+				<div id="Yes95"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/96.jpg" height="220">
+				<h2>Q96、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn96()" id="btn96">按此輸入答案</button>
+				<div id="Yes96"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/97.jfif" height="220">
+				<h2>Q97、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn97()" id="btn97">按此輸入答案</button>
+				<div id="Yes97"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/98.jpg" height="220">
+				<h2>Q98、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn98()" id="btn98">按此輸入答案</button>
+				<div id="Yes98"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/99.jfif" height="220">
+				<h2>Q99、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn99()" id="btn99">按此輸入答案</button>
+				<div id="Yes99"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/100.jfif" height="220">
+				<h2>Q100、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn100()" id="btn100">按此輸入答案</button>
+				<div id="Yes100"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/101.jpg" height="220">
+				<h2>Q101、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn101()" id="btn101">按此輸入答案</button>
+				<div id="Yes101"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/102.jpg" height="220">
+				<h2>Q102、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn102()" id="btn102">按此輸入答案</button>
+				<div id="Yes102"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/103.jpg" height="220">
+				<h2>Q103、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn103()" id="btn103">按此輸入答案</button>
+				<div id="Yes103"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/104.jpg" height="220">
+				<h2>Q104、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn104()" id="btn104">按此輸入答案</button>
+				<div id="Yes104"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/105.jpg" height="220">
+				<h2>Q105、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn105()" id="btn105">按此輸入答案</button>
+				<div id="Yes105"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/106.jpg" height="220">
+				<h2>Q106、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn106()" id="btn106">按此輸入答案</button>
+				<div id="Yes106"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/107.jpg" height="220">
+				<h2>Q107、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn107()" id="btn107">按此輸入答案</button>
+				<div id="Yes107"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/108.jpg" height="220">
+				<h2>Q108、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn108()" id="btn108">按此輸入答案</button>
+				<div id="Yes108"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/109.jpg" height="220">
+				<h2>Q109、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn109()" id="btn109">按此輸入答案</button>
+				<div id="Yes109"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/110.jpg" height="220">
+				<h2>Q110、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn110()" id="btn110">按此輸入答案</button>
+				<div id="Yes110"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/111.jpg" height="220">
+				<h2>Q111、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn111()" id="btn111">按此輸入答案</button>
+				<div id="Yes111"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/112.jpg" height="220">
+				<h2>Q112、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn112()" id="btn112">按此輸入答案</button>
+				<div id="Yes112"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/113.jfif" height="220">
+				<h2>Q113、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn113()" id="btn113">按此輸入答案</button>
+				<div id="Yes113"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/114.jpg" height="220">
+				<h2>Q114、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn114()" id="btn114">按此輸入答案</button>
+				<div id="Yes114"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/115.jpg" height="220">
+				<h2>Q115、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn115()" id="btn115">按此輸入答案</button>
+				<div id="Yes115"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/116.jpg" height="220">
+				<h2>Q116、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn116()" id="btn116">按此輸入答案</button>
+				<div id="Yes116"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/117.jpg" height="220">
+				<h2>Q117、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn117()" id="btn117">按此輸入答案</button>
+				<div id="Yes117"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/118.jpg" height="220">
+				<h2>Q118、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn118()" id="btn118">按此輸入答案</button>
+				<div id="Yes118"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/119.jpg" height="220">
+				<h2>Q119、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn119()" id="btn119">按此輸入答案</button>
+				<div id="Yes119"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/120.jfif" height="220">
+				<h2>Q120、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn120()" id="btn120">按此輸入答案</button>
+				<div id="Yes120"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/121.jpg" height="220">
+				<h2>Q121、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn121()" id="btn121">按此輸入答案</button>
+				<div id="Yes121"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/122.png" height="220">
+				<h2>Q122、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn122()" id="btn122">按此輸入答案</button>
+				<div id="Yes122"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/123.jfif" height="220">
+				<h2>Q123、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn123()" id="btn123">按此輸入答案</button>
+				<div id="Yes123"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/124.jpeg" height="220">
+				<h2>Q124、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn124()" id="btn124">按此輸入答案</button>
+				<div id="Yes124"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/125.jpg" height="220">
+				<h2>Q125、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn125()" id="btn125">按此輸入答案</button>
+				<div id="Yes125"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/126.jfif" height="220">
+				<h2>Q126、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn126()" id="btn126">按此輸入答案</button>
+				<div id="Yes126"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/127.jpg" height="220">
+				<h2>Q127、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn127()" id="btn127">按此輸入答案</button>
+				<div id="Yes127"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/128.jpeg" height="220">
+				<h2>Q128、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn128()" id="btn128">按此輸入答案</button>
+				<div id="Yes128"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/129.jpg" height="220">
+				<h2>Q129、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn129()" id="btn129">按此輸入答案</button>
+				<div id="Yes129"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/130.jpg" height="220">
+				<h2>Q130、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn130()" id="btn130">按此輸入答案</button>
+				<div id="Yes130"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/131.jpg" height="220">
+				<h2>Q131、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn131()" id="btn131">按此輸入答案</button>
+				<div id="Yes131"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/132.jpg" height="220">
+				<h2>Q132、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn132()" id="btn132">按此輸入答案</button>
+				<div id="Yes132"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/133.jpg" height="220">
+				<h2>Q133、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn133()" id="btn133">按此輸入答案</button>
+				<div id="Yes133"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/134.jpg" height="220">
+				<h2>Q134、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn134()" id="btn134">按此輸入答案</button>
+				<div id="Yes134"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/135.jpg" height="220">
+				<h2>Q135、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn135()" id="btn135">按此輸入答案</button>
+				<div id="Yes135"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/136.jpg" height="220">
+				<h2>Q136、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn136()" id="btn136">按此輸入答案</button>
+				<div id="Yes136"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/137.jpg" height="220">
+				<h2>Q137、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn137()" id="btn137">按此輸入答案</button>
+				<div id="Yes137"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/138.jpg" height="220">
+				<h2>Q138、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn138()" id="btn138">按此輸入答案</button>
+				<div id="Yes138"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/139.jpg" height="220">
+				<h2>Q139、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn139()" id="btn139">按此輸入答案</button>
+				<div id="Yes139"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/140.jpg" height="220">
+				<h2>Q140、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn140()" id="btn140">按此輸入答案</button>
+				<div id="Yes140"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/141.jpg" height="220">
+				<h2>Q141、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn141()" id="btn141">按此輸入答案</button>
+				<div id="Yes141"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/142.jpg" height="220">
+				<h2>Q142、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn142()" id="btn142">按此輸入答案</button>
+				<div id="Yes142"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/143.jpg" height="220">
+				<h2>Q143、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn143()" id="btn143">按此輸入答案</button>
+				<div id="Yes143"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/144.jpg" height="220">
+				<h2>Q144、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn144()" id="btn144">按此輸入答案</button>
+				<div id="Yes144"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/145.jpg" height="220">
+				<h2>Q145、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn145()" id="btn145">按此輸入答案</button>
+				<div id="Yes145"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/146.jpg" height="220">
+				<h2>Q146、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn146()" id="btn146">按此輸入答案</button>
+				<div id="Yes146"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/147.jpg" height="220">
+				<h2>Q147、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn147()" id="btn147">按此輸入答案</button>
+				<div id="Yes147"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/148.jfif" height="220">
+				<h2>Q148、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn148()" id="btn148">按此輸入答案</button>
+				<div id="Yes148"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/149.jpg" height="220">
+				<h2>Q149、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn149()" id="btn149">按此輸入答案</button>
+				<div id="Yes149"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/150.jpg" height="220">
+				<h2>Q150、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn150()" id="btn150">按此輸入答案</button>
+				<div id="Yes150"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/151.jpeg" height="220">
+				<h2>Q151、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn151()" id="btn151">按此輸入答案</button>
+				<div id="Yes151"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/152.png" height="220">
+				<h2>Q152、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn152()" id="btn152">按此輸入答案</button>
+				<div id="Yes152"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/153.jfif" height="220">
+				<h2>Q153、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn153()" id="btn153">按此輸入答案</button>
+				<div id="Yes153"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/154.jpg" height="220">
+				<h2>Q154、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn154()" id="btn154">按此輸入答案</button>
+				<div id="Yes154"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/155.jpg" height="220">
+				<h2>Q155、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn155()" id="btn155">按此輸入答案</button>
+				<div id="Yes155"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/156.jpg" height="220">
+				<h2>Q156、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn156()" id="btn156">按此輸入答案</button>
+				<div id="Yes156"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/157.png" height="220">
+				<h2>Q157、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn157()" id="btn157">按此輸入答案</button>
+				<div id="Yes157"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/158.jpg" height="220">
+				<h2>Q158、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn158()" id="btn158">按此輸入答案</button>
+				<div id="Yes158"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/159.png" height="220">
+				<h2>Q159、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn159()" id="btn159">按此輸入答案</button>
+				<div id="Yes159"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/160.jpg" height="220">
+				<h2>Q160、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn160()" id="btn160">按此輸入答案</button>
+				<div id="Yes160"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/161.png" height="220">
+				<h2>Q161、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn161()" id="btn161">按此輸入答案</button>
+				<div id="Yes161"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/162.jpg" height="220">
+				<h2>Q162、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn162()" id="btn162">按此輸入答案</button>
+				<div id="Yes162"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/163.jpg" height="220">
+				<h2>Q163、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn163()" id="btn163">按此輸入答案</button>
+				<div id="Yes163"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/164.jpg" height="220">
+				<h2>Q164、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn164()" id="btn164">按此輸入答案</button>
+				<div id="Yes164"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/165.jpg" height="220">
+				<h2>Q165、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn165()" id="btn165">按此輸入答案</button>
+				<div id="Yes165"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/166.jpg" height="220">
+				<h2>Q166、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn166()" id="btn166">按此輸入答案</button>
+				<div id="Yes166"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/167.jpg" height="220">
+				<h2>Q167、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn167()" id="btn167">按此輸入答案</button>
+				<div id="Yes167"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/168.jpg" height="220">
+				<h2>Q168、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn168()" id="btn168">按此輸入答案</button>
+				<div id="Yes168"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/169.jpg" height="220">
+				<h2>Q169、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn169()" id="btn169">按此輸入答案</button>
+				<div id="Yes169"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/170.jpg" height="220">
+				<h2>Q170、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn170()" id="btn170">按此輸入答案</button>
+				<div id="Yes170"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/171.jpg" height="220">
+				<h2>Q171、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn171()" id="btn171">按此輸入答案</button>
+				<div id="Yes171"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/172.jfif" height="220">
+				<h2>Q172、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn172()" id="btn172">按此輸入答案</button>
+				<div id="Yes172"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/173.jfif" height="220">
+				<h2>Q173、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn173()" id="btn173">按此輸入答案</button>
+				<div id="Yes173"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/174.jfif" height="220">
+				<h2>Q174、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn174()" id="btn174">按此輸入答案</button>
+				<div id="Yes174"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/175.jpg" height="220">
+				<h2>Q175、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn175()" id="btn175">按此輸入答案</button>
+				<div id="Yes175"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/176.png" height="220">
+				<h2>Q176、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn176()" id="btn176">按此輸入答案</button>
+				<div id="Yes176"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/177.jpg" height="220">
+				<h2>Q177、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn177()" id="btn177">按此輸入答案</button>
+				<div id="Yes177"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/178.jpg" height="220">
+				<h2>Q178、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn178()" id="btn178">按此輸入答案</button>
+				<div id="Yes178"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/179.jfif" height="220">
+				<h2>Q179、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn179()" id="btn179">按此輸入答案</button>
+				<div id="Yes179"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/180.jpg" height="220">
+				<h2>Q180、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn180()" id="btn180">按此輸入答案</button>
+				<div id="Yes180"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/181.jfif" height="220">
+				<h2>Q181、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn181()" id="btn181">按此輸入答案</button>
+				<div id="Yes181"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/182.jpg" height="220">
+				<h2>Q182、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn182()" id="btn182">按此輸入答案</button>
+				<div id="Yes182"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/183.jpg" height="220">
+				<h2>Q183、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn183()" id="btn183">按此輸入答案</button>
+				<div id="Yes183"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/184.jpg" height="220">
+				<h2>Q184、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn184()" id="btn184">按此輸入答案</button>
+				<div id="Yes184"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/185.jpg" height="220">
+				<h2>Q185、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn185()" id="btn185">按此輸入答案</button>
+				<div id="Yes185"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/186.jpg" height="220">
+				<h2>Q186、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn186()" id="btn186">按此輸入答案</button>
+				<div id="Yes186"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/187.jpg" height="220">
+				<h2>Q187、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn187()" id="btn187">按此輸入答案</button>
+				<div id="Yes187"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/188.jpg" height="220">
+				<h2>Q188、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn188()" id="btn188">按此輸入答案</button>
+				<div id="Yes188"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/189.png" height="220">
+				<h2>Q189、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn189()" id="btn189">按此輸入答案</button>
+				<div id="Yes189"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/190.jpg" height="220">
+				<h2>Q190、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn190()" id="btn190">按此輸入答案</button>
+				<div id="Yes190"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/191.jfif" height="220">
+				<h2>Q191、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn191()" id="btn191">按此輸入答案</button>
+				<div id="Yes191"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/192.jpg" height="220">
+				<h2>Q192、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn192()" id="btn192">按此輸入答案</button>
+				<div id="Yes192"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/193.png" height="220">
+				<h2>Q193、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn193()" id="btn193">按此輸入答案</button>
+				<div id="Yes193"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/194.jpg" height="220">
+				<h2>Q194、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn194()" id="btn194">按此輸入答案</button>
+				<div id="Yes194"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/195.png" height="220">
+				<h2>Q195、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn195()" id="btn195">按此輸入答案</button>
+				<div id="Yes195"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/196.jpg" height="220">
+				<h2>Q196、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn196()" id="btn196">按此輸入答案</button>
+				<div id="Yes196"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/197.jpg" height="220">
+				<h2>Q197、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn197()" id="btn197">按此輸入答案</button>
+				<div id="Yes197"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/198.jpg" height="220">
+				<h2>Q198、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn198()" id="btn198">按此輸入答案</button>
+				<div id="Yes198"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/199.jpg" height="220">
+				<h2>Q199、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn199()" id="btn199">按此輸入答案</button>
+				<div id="Yes199"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/200.jpg" height="220">
+				<h2>Q200、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn200()" id="btn200">按此輸入答案</button>
+				<div id="Yes200"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/201.jpg" height="220">
+				<h2>Q201、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn201()" id="btn201">按此輸入答案</button>
+				<div id="Yes201"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/202.jpg" height="220">
+				<h2>Q202、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn202()" id="btn202">按此輸入答案</button>
+				<div id="Yes202"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/203.jpg" height="220">
+				<h2>Q203、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn203()" id="btn203">按此輸入答案</button>
+				<div id="Yes203"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/204.jpg" height="220">
+				<h2>Q204、這個人的名字叫做??（請用英文）</h2>
+				<button type="button" class="btn btn-danger" onclick="btn204()" id="btn204">按此輸入答案</button>
+				<div id="Yes204"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/205.jpg" height="220">
+				<h2>Q205、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn205()" id="btn205">按此輸入答案</button>
+				<div id="Yes205"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/206.jpg" height="220">
+				<h2>Q206、這個人的名字叫做??（請用英文）</h2>
+				<button type="button" class="btn btn-danger" onclick="btn206()" id="btn206">按此輸入答案</button>
+				<div id="Yes206"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/207.jpg" height="220">
+				<h2>Q207、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn207()" id="btn207">按此輸入答案</button>
+				<div id="Yes207"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/208.png" height="220">
+				<h2>Q208、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn208()" id="btn208">按此輸入答案</button>
+				<div id="Yes208"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/209.jpg" height="220">
+				<h2>Q209、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn209()" id="btn209">按此輸入答案</button>
+				<div id="Yes209"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/210.jpg" height="220">
+				<h2>Q210、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn210()" id="btn210">按此輸入答案</button>
+				<div id="Yes210"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/211.jpg" height="220">
+				<h2>Q211、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn211()" id="btn211">按此輸入答案</button>
+				<div id="Yes211"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/212.jpeg" height="220">
+				<h2>Q212、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn212()" id="btn212">按此輸入答案</button>
+				<div id="Yes212"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/213.jpg" height="220">
+				<h2>Q213、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn213()" id="btn213">按此輸入答案</button>
+				<div id="Yes213"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/214.jpg" height="220">
+				<h2>Q214、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn214()" id="btn214">按此輸入答案</button>
+				<div id="Yes214"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/215.jpg" height="220">
+				<h2>Q215、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn215()" id="btn215">按此輸入答案</button>
+				<div id="Yes215"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/216.jpg" height="220">
+				<h2>Q216、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn216()" id="btn216">按此輸入答案</button>
+				<div id="Yes216"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/217.jpg" height="220">
+				<h2>Q217、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn217()" id="btn217">按此輸入答案</button>
+				<div id="Yes217"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/218.jfif" height="220">
+				<h2>Q218、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn218()" id="btn218">按此輸入答案</button>
+				<div id="Yes218"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/219.jpg" height="220">
+				<h2>Q219、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn219()" id="btn219">按此輸入答案</button>
+				<div id="Yes219"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/220.jpg" height="220">
+				<h2>Q220、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn220()" id="btn220">按此輸入答案</button>
+				<div id="Yes220"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/221.jpg" height="220">
+				<h2>Q221、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn221()" id="btn221">按此輸入答案</button>
+				<div id="Yes221"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/222.jpg" height="220">
+				<h2>Q222、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn222()" id="btn222">按此輸入答案</button>
+				<div id="Yes222"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/223.jfif" height="220">
+				<h2>Q223、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn223()" id="btn223">按此輸入答案</button>
+				<div id="Yes223"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/224.jpeg" height="220">
+				<h2>Q224、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn224()" id="btn224">按此輸入答案</button>
+				<div id="Yes224"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/225.jpg" height="220">
+				<h2>Q225、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn225()" id="btn225">按此輸入答案</button>
+				<div id="Yes225"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/226.jpg" height="220">
+				<h2>Q226、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn226()" id="btn226">按此輸入答案</button>
+				<div id="Yes226"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/227.jpg" height="220">
+				<h2>Q227、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn227()" id="btn227">按此輸入答案</button>
+				<div id="Yes227"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/228.jpg" height="220">
+				<h2>Q228、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn228()" id="btn228">按此輸入答案</button>
+				<div id="Yes228"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/229.jpg" height="220">
+				<h2>Q229、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn229()" id="btn229">按此輸入答案</button>
+				<div id="Yes229"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/230.jpg" height="220">
+				<h2>Q230、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn230()" id="btn230">按此輸入答案</button>
+				<div id="Yes230"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/231.jpg" height="220">
+				<h2>Q231、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn231()" id="btn231">按此輸入答案</button>
+				<div id="Yes231"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/232.jpg" height="220">
+				<h2>Q232、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn232()" id="btn232">按此輸入答案</button>
+				<div id="Yes232"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/233.jpg" height="220">
+				<h2>Q233、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn233()" id="btn233">按此輸入答案</button>
+				<div id="Yes233"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/234.jfif" height="220">
+				<h2>Q234、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn234()" id="btn234">按此輸入答案</button>
+				<div id="Yes234"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/235.jpg" height="220">
+				<h2>Q235、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn235()" id="btn235">按此輸入答案</button>
+				<div id="Yes235"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/236.jfif" height="220">
+				<h2>Q236、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn236()" id="btn236">按此輸入答案</button>
+				<div id="Yes236"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/237.jpg" height="220">
+				<h2>Q237、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn237()" id="btn237">按此輸入答案</button>
+				<div id="Yes237"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/238.png" height="220">
+				<h2>Q238、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn238()" id="btn238">按此輸入答案</button>
+				<div id="Yes238"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/239.jpg" height="220">
+				<h2>Q239、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn239()" id="btn239">按此輸入答案</button>
+				<div id="Yes239"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/240.jpg" height="220">
+				<h2>Q240、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn240()" id="btn240">按此輸入答案</button>
+				<div id="Yes240"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/241.jpg" height="220">
+				<h2>Q241、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn241()" id="btn241">按此輸入答案</button>
+				<div id="Yes241"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/242.jpg" height="220">
+				<h2>Q242、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn242()" id="btn242">按此輸入答案</button>
+				<div id="Yes242"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/243.jpg" height="220">
+				<h2>Q243、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn243()" id="btn243">按此輸入答案</button>
+				<div id="Yes243"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/244.jpg" height="220">
+				<h2>Q244、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn244()" id="btn244">按此輸入答案</button>
+				<div id="Yes244"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/245.jpg" height="220">
+				<h2>Q245、這個人的名字叫做??（請用英文）</h2>
+				<button type="button" class="btn btn-danger" onclick="btn245()" id="btn245">按此輸入答案</button>
+				<div id="Yes245"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/246.jpg" height="220">
+				<h2>Q246、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn246()" id="btn246">按此輸入答案</button>
+				<div id="Yes246"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/247.png" height="220">
+				<h2>Q247、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn247()" id="btn247">按此輸入答案</button>
+				<div id="Yes247"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/248.jpg" height="220">
+				<h2>Q248、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn248()" id="btn248">按此輸入答案</button>
+				<div id="Yes248"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/249.jpg" height="220">
+				<h2>Q249、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn249()" id="btn249">按此輸入答案</button>
+				<div id="Yes249"></div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="picture/250.jpg" height="220">
+				<h2>Q250、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn250()" id="btn250">按此輸入答案</button>
+				<div id="Yes250"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/251.jpg" height="220">
+				<h2>Q251、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn251()" id="btn251">按此輸入答案</button>
+				<div id="Yes251"></div>
+			</div>
+			<div class="col-12 col-md-4">
+				<img src="picture/252.jfif" height="220">
+				<h2>Q252、這個人的名字叫做??</h2>
+				<button type="button" class="btn btn-danger" onclick="btn252()" id="btn252">按此輸入答案</button>
+				<div id="Yes252"></div>
+			</div>
+		</div>
+	</div>
+	<footer class="my-5 pt-5 text-muted text-center text-small">
+    	<p class="mb-1">恭喜你完成了挑戰，希望你可以全對</p>
+    	<ul class="list-inline">
+      		<li class="list-inline-item"><a href="../../Game.html">回首頁</a></li>
+    	</ul>
+  	</footer>
+</body>
+</html>
