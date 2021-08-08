@@ -3202,3 +3202,21 @@ function btn179() {
   });
 });
 }
+function btn57() { 
+  document.getElementById("btn57").addEventListener("click",function(){
+  swal("請輸入答案", {
+    content: "input",
+  })
+  .then((value) => {
+    if (value == "乖乖"){
+      swal("恭喜你答對了","","success");
+      document.getElementById('Yes57').innerHTML = '答案：乖乖';
+      document.getElementById('img57').innerHTML = '<img src="picture/57_1.png" height="220">';
+    }else if(value == ""){
+      swal("答案不能為空白","","warning");
+    }else{
+      swal("不好意思你答錯了","","error");
+    }
+  });
+});
+}
